@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://gattxxa.github.io/boombot/favicon.ico">
+    <link rel="stylesheet" href="base.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="agree.js"></script>
+    <title>Boom Bot / Discord Bot for Valorant</title>
+    <meta name="keywords" content="Valorant, boombot, カスタム, discord, bot, チーム分け" />
+    <meta name="description" content="ランクによる戦力差を考慮したチーム分けを行える、Valorant向けDiscordBot" />
+  </head>
+
+  <body>
+    <div id="profile">
+      <img src="boombot.png" class="icon">
+      <h1>Boom Bot</h1>
+      <a href="./migrating/" target="_blank" class="bold">Boom Botのアップデート方法はこちら</a>
+    </div>
+    
+    <div class="items">
+      <div id="profile" class="item">
+        <h2>特徴</h2>
+        <div class="contents">
+        ランクによる戦力差を考慮したチーム分け<br>
+        チーム分けは２～１０人まで対応<br>
+        マップのランダム抽選<br>
+        </div>
+      </div>
+
+      <div id="profile" class="item">
+        <h2>使い方</h2>
+        <div class="contents">
+        ◎ カスタム参加者は <span class="command">/valo rank silver2</span> の形式でランク情報を登録します。<br>
+        <span class="hint">
+        ※レディアントの場合のみ、ティアの数値が必要ありません<br>
+        </span>
+        <br>
+        ◎ カスタム参加者が、同じボイスチャンネルに入室している状態で<br>
+        <span class="command">/valo team</span> を使用してチーム分けを開始します。<br>
+        <span class="hint">
+        ※人数が溢れた場合は送信されるメッセージに従ってください<br>
+        </span>
+        <br>
+        ◎ マップの抽選を行いたい場合は <span class="command">/valo map</span> を使用します。<br>
+        <br>
+        ◎ お困りの場合は <span class="command">/valo help</span> を使用してください。<br>
+        </div>
+      </div>
+
+      <div id="profile" class="item">
+        <h2>動作要件</h2>
+        <a href="./migrating/index.html#Step2" target="_blank" class="bold">動作要件</a>を参照してください。
+      </div>
+
+      <div id="profile" class="item">
+        <h2>招待</h2>
+        <input type="checkbox" id="agree" style="width: 2em; height: 2em; vertical-align: middle;">
+        <span class="bold">使い方</span>と<a href="./terms/" target="_blank" class="bold">利用規約</a>を理解しました。<br>
+        <br>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=866411536717185055&permissions=8&scope=bot%20applications.commands" target="_blank" id="invite" class="btn-disabled">Invite</a>
+      </div>
+    </div>
+
+  </body>
+</html>
